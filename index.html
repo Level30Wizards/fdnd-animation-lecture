@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animate iets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="/">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/about.html">
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Simple click</h2>
+      <button class="open-modal">
+        Open modal
+      </button>
+      <div class="modal">
+        <button class="close">X</button>
+        <h2>Hi I'm a modal</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis voluptatem, aut rem laboriosam possimus iusto quia perferendis consequuntur soluta. Natus quae, soluta illo quisquam mollitia maiores qui perspiciatis hic unde.</p>
+      </div>
+    </section>
+    <section>
+      <h2>Transition end</h2>
+      <button class="start-transition">Start transition</button>
+      <div class="box red transition"></div>
+    </section>
+    <section>
+      <h2>Animation end</h2>
+      <button class="start-animation">Start animation</button>
+      <button class="pause-animation">Pause animations</button>
+      <p class="animation-iterations">Animation iterations: 0</p>
+      <div class="box red animation-fromto"></div>
+      <div class="box yellow animation"></div>
+    </section>
+    <section>
+      <h2>Intersection</h2>
+      <div class="box red transition intersect"></div>
+    </section>
+    <section class="scroll-container">
+      <h2>Scroll</h2>
+      <div class="box red transition scroll"></div>
+    </section>
+    <section>
+      <h2>Gsap</h2>
+      <button class="start-gsap-to-animation">Start animation</button>
+      <div class="box yellow gsap-to"></div>
+    </section>
+    <section>
+      <h2>Gsap timeline</h2>
+      <button class="start-gsap-timeline-animation">Start timeline</button>
+      <div class="box red gsap-timeline"></div>
+    </section>
+  </main>
+
+  <div class="page-transition-container">
+    <div class="page-transition"></div>
+    <div class="page-transition"></div>
+  </div>
+  
+  <script src="/gsap.min.js"></script>
+  <script src="/ScrollTrigger.min.js"></script>
+  <script src="/scripts.js"></script>
+</body>
+</html>
